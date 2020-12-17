@@ -23,14 +23,14 @@ h3 {
 	margin-bottom:10px;
 }
 
-	a {color: #004f99;text-decoration: underline;}
-	a:hover {color: #062f5f;text-decoration: none;}
-	
-	ul, ol {padding:0;margin:0;}
-	ul li {list-style-type:disc;}
-	ol li {list-style-type:decimal;}
-	ul li, 
-	ol li {font-size: 13px; line-height: 16px;margin: 0 0 10px 15px;}
+a {color: #004f99;text-decoration: underline;}
+a:hover {color: #062f5f;text-decoration: none;}
+
+ul, ol {padding:0;margin:0;}
+ul li {list-style-type:disc;}
+ol li {list-style-type:decimal;}
+ul li,
+ol li {font-size: 13px; line-height: 16px;margin: 0 0 10px 15px;}
 
 #wrapper {
 	width:1000px;
@@ -50,19 +50,19 @@ header .top_banner{
 }
 
 
-.navigation{
+nav{
 	margin:0px 0px 25px;
 	border-bottom:#adb1b2 solid 1px;
 	padding:15px 5px;
 	background: #e4e6e5;
 }
 
-.navigation ul{
+nav ul{
 	margin:0px;
 	padding-left: 0px;
 }
 
-.navigation ul li{
+nav ul li{
 	margin:0px;
 	padding:0px 32px;
 	display:inline;
@@ -71,66 +71,66 @@ header .top_banner{
 	border-right:#868B8F dotted 2px;
 }
 
-.navigation ul li a{
+nav ul li a{
 	color:#004f99;
 	text-decoration:none;
 }
 
-.navigation ul li a:hover{
+nav ul li a:hover{
 	color: red;
 	text-decoration: none;
 }
 
 
 /*----page content----*/
-#page_content{
+article{
 	background:#EBEEEE;
 	padding:10px;
 }
 
-#page_content .right_section{
+section{
 	width:735px;
 	float:right;
 }
 
-/*----common content----*/
-.common_content{
-	padding:0 30px 50px 0;
+
+section .common_content{
+	padding:0px;
 }
-.common_content img{
+section .common_content img{
 	margin-top: 10px;
 	height: 150px;
 	width: 150px;
 }
-.common_content ul li{
+section .common_content ul li{
 	margin:0px 0px 8px;
 	padding:10px 0px 10px 20px;
 	font-size:15px;
 	list-style-type:none;
 	background:url(../images/pencil.png) no-repeat left center;
 }
-.common_content .w1 td {
+section .common_content .w1 td {
 
 	border:#A1A9AB solid 1px;
 	padding: 10px;
 	background-color: #cef8ff;
-	border-collapse: collapse; 
+	border-collapse: collapse;
 }
-.common_content .w2 td{
+section .common_content .w2 td{
 
 	border:#A1A9AB solid 1px;
 	padding: 10px;
 	background-color: #fffbbf;
 	border-collapse: collapse;
 }
-/*----left sidebar----*/
-.left_side_bar{
+/*---- aside left sidebar----*/
+aside{
 	width:210px;
 	margin-top:15px;
 	margin-bottom:10px;
 	float:left;
 }
-.left_side_bar h1{
+aside h1{
 	font-size:18px;
 	padding:0 0 0 28px;
 	margin-bottom:5px;
@@ -139,12 +139,12 @@ header .top_banner{
 	background:url(../images/li.png) no-repeat 10px center;
 }
 
-.left_side_bar .col_1 .box{
+aside .col_1 .box{
 	padding:10px 15px 5px;
 	border:#A1A9AB solid 1px;
 }
 
-.left_side_bar .col_1 .box ul li{
+aside .col_1 .box ul li{
 	margin:0px 0px 8px;
 	padding:0px 0px 0px 20px;
 	font-size:14px;
@@ -152,21 +152,21 @@ header .top_banner{
 	background:url(../images/li.png) no-repeat left center;
 }
 
-.left_side_bar .col_1 .box ul li a{
+aside .col_1 .box ul li a{
 	color:#364b38;
 	text-decoration:none;
 }
 
-.left_side_bar .col_1 .box ul li a:hover{
+aside .col_1 .box ul li a:hover{
 	color: red;
 	text-decoration:none;
 }
 
 div.niceBox{
-    position: relative;
-    padding: 10px;
-    width: 580px;
-    height:700px;
+	position: relative;
+	padding: 10px;
+	width: 580px;
+	height:400px;
 }
 
 #mountainpic{
@@ -174,7 +174,7 @@ div.niceBox{
 	width: 20%;
 	position:absolute;top:230px;left:160px;
 	z-index:1;
-	
+
 }
 #streetpic{
 	z-index: -1;
@@ -195,11 +195,67 @@ footer{
 	line-height:19px;
 	border-top:#b9bdbe solid 1px;
 }
+
 footer a{
 	color: #004f99;
 	text-decoration:none;
 }
+
 footer a:hover{
 	color: red;
 	text-decoration:underline;
+}
+
+
+video {
+	width: 600px;
+	height: 400px;
+}
+svg {
+	width: 200px;
+	height: 200px;
+}
+circle{
+	cx: 100px;
+	cy: 100px;
+	r: 70px;
+	stroke: red;
+	stroke-width: 10px;
+	fill: blue;
+}
+
+rect{
+	width: 150px;
+	height: 150px;
+	x: 30px;
+	y: 30px;
+	ry: 30px;
+	rx: 30px;
+	stroke: yellow;
+	stroke-width: 10px;
+	fill: red;
+}
+object{
+	width: 250px;
+	height: 250px;
+}
+
+input[type=submit] {
+
+	width: 240px;
+	height: 80px;
+	border: white 5px solid;
+	margin: 0;
+	padding: 0;
+	background: #0c0 url(../images/submit-button.png) 0 0 no-repeat;
+}
+
+input[type=submit]:hover{
+	font-size: 0;
+	width: 240px;
+	height: 80px;
+	border: cyan 5px solid;
+	margin: 0;
+	padding: 0;
+	background: url("../images/submit-button.png") 0 0 no-repeat;
 }
