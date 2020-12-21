@@ -11,72 +11,72 @@
 </head>
 <!--   hier startet body -->
 <body>
-<div id="wrapper">
-  <!---------   header  -------------->
-  <header>
-    <div class="top_banner">
-    </div>
-  </header>
-  <!---------   article  -------------->
-  <article>
-    <!---------   navigation  -------------->
-    <nav>
-      <ul>
-        <li><a href="https://www.fh-kiel.de/startseite/">FH-KIEL</a></li>
-        <li><a href="https://lms.fh-kiel.de/login/index.php">LMS</a></li>
-        <li><a href="https://qis.fh-kiel.de/qisserver/">QIS</a></li>
-        <li><a href="https://ida.fh-kiel.de/idw/">IDW</a></li>
-        <li><a href="https://fh-kiel-shop.de/">SHOP</a></li>
-        <li><a href="https://www.fh-kiel.de/campus/projekte/campus-tv/">CAMPUS-TV</a></li>
-      </ul>
-    </nav>
-    <!---------  aside  -------------->
-    <aside>
-      <h1>Menü</h1>
-      <div class="col_1">
-        <div class="box">
-          <ul>
-            <li><a href="index.html">Start</a></li>
-            <li><a href="galeri.html">Galeri</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-          </ul>
-        </div>
-      </div>
-    </aside>
-    <!---------   section  -------------->
-    <section>
-      <section class="common_content">
-      <h2>Kontakt-Formular</h2>
-        <hr>
-        <br/><br/>
-        <form action="Applications/XAMPP/xamppfiles/htdocs/Aufgabe2/cgi-bin/echo.pl"
-              method="post" accept-charset="utf-8" target="_blank" >
-          <label for="name">Name:</label>
-          <input type="text" name="name" required="on" id="name"><br/>
-          <label for="pwd">Password:</label>
-          <input type="password" name="password" required="on" id="pwd"><br/>
-          <label for="gender_m">Male</label>
-          <input type="radio" name="geschlecht" value="mann" id="gender_m">
-          <label for="gender_f">Female</label>
-          <input type="radio" name="geschlecht" value="frau" id="gender_f"><br/>
-          <label for="emailr">Email:</label>
-          <input type="email" name="email" id="emailr"> <br/>
-          <label for="date">Date:</label>
-          <input type="date" name="geburtsdatum" id="date"><br/><br/>
-          <label for="area">Ihre Nachricht:</label></br>
-          <textarea rows="4" cols="50" id="area">Schreiben Sie</textarea><br/>
-          <input type="reset" name="reset" value="Reset" onclick="alert('Formular ist geleert')">
-          <input type="submit" name="submit" value=""/>
-        </form>
-        <!-- <form action="cgi-bin/script.cgi" method="post" accept-charset="utf-8"></form> -->
-        <br/><br/><br/>
-      </section>
-    </section>
-    <!---------   footer  -------------->
-    <footer>Copyright &copy; 2020 Design by <a href= "http://fh-kiel.de">Mattis und Gürdal</a>
-    </footer>
-  </article>
-</div>
+	<div id="wrapper">
+	  <!---------   header  -------------->
+	  <header>
+		<div class="top_banner">
+		</div>
+	  </header>
+	  <!---------   article  -------------->
+	  <article>
+		<!---------   navigation  -------------->
+		<nav>
+		  <ul>
+			<li><a href="https://www.fh-kiel.de/startseite/">FH-KIEL</a></li>
+			<li><a href="https://lms.fh-kiel.de/login/index.php">LMS</a></li>
+			<li><a href="https://qis.fh-kiel.de/qisserver/">QIS</a></li>
+			<li><a href="https://ida.fh-kiel.de/idw/">IDW</a></li>
+			<li><a href="https://fh-kiel-shop.de/">SHOP</a></li>
+			<li><a href="https://www.fh-kiel.de/campus/projekte/campus-tv/">CAMPUS-TV</a></li>
+		  </ul>
+		</nav>
+		<!---------  aside  -------------->
+		<aside>
+		  <h1>Menü</h1>
+		  <div class="col_1">
+			<div class="box">
+			  <ul>
+				<li><a href="index.html">Start</a></li>
+				<li><a href="galeri.html">Galeri</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</aside>
+		<!---------   section  -------------->
+		<section>
+		  <section class="common_content">
+		  <h2>Kontakt-Formular</h2>	
+			<hr>
+			<br/><br/>
+			<form action="cgi-bin\welcome.php"
+				  method="post" accept-charset="utf-8" target="_blank" >
+			  <label for="name">Name:</label>
+			  <input type="text" name="name" required="on" id="name"><br/>
+			  <label for="pwd">Password:</label>
+			  <input type="password" name="password" required="on" id="pwd"><br/>
+			  <label for="gender_m">Male</label>
+			  <input type="radio" name="geschlecht" value="mann" required="on" id="gender_m">
+			  <label for="gender_f">Female</label>
+			  <input type="radio" name="geschlecht" value="frau" required="on" id="gender_f"><br/>
+			  <label for="emailr">Email:</label>
+			  <input type="email" name="email" required="on" id="emailr"> <br/>
+			  <label for="date">Date:</label>
+			  <input type="date" name="geburtsdatum" required="on" id="date"><br/><br/>
+			  <label for="area">Ihre Nachricht:</label></br>
+			  <textarea rows="4" name="area" cols="50" id="area"></textarea><br/>
+			  <input type="reset" name="reset" value="Reset" onclick="alert('Formular ist geleert')">
+			  <input type="submit" name="submit" value="Submit"/>
+			</form>
+			<!-- <form action="cgi-bin/script.cgi" method="post" accept-charset="utf-8"></form> -->
+			<br/><br/><br/>
+		  </section>
+		</section>
+		<!---------   footer  -------------->
+		<footer>Copyright &copy; 2020 Design by <a href= "http://fh-kiel.de">Mattis und Gürdal</a>
+		</footer>
+	  </article>
+	</div>
 </body>
 <!--   hier endet body -->
 </html>
