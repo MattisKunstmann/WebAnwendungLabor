@@ -10,7 +10,7 @@
 	  <title>Web Anwendungen Aufgabe-2</title>
 	</head>
 	<!--   hier startet body -->
-	<body >
+	<body onload= "onLoad()">
 		<div id="wrapper">
 		  <header>
 			<div class="top_banner">
@@ -45,11 +45,14 @@
 			  </div>
 			</aside>
 			<!---------   section  -------------->
-			<section>
+			<section  id="section">
 			  <section class="common_content">
 				<h2>Javascript Magie</h2>
-				<div onload ="getBrowserType()" ></div>
+				
 				<hr>
+				<div id="importantdiv"></div>
+				<canvas id="canvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+					</canvas>
 				<br/><br/><br/>
 			  </section>
 			</section>
@@ -58,7 +61,8 @@
 			</footer>
 		  </article>
 		</div>
-		<script src="javascript/script.js" ></script>
+		
 	</body>
+	<script src="javascript/script.js"></script>
 	<!--   hier endet body -->
 </html>
