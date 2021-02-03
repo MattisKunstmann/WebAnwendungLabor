@@ -7,6 +7,7 @@
   <meta charset="utf-8"/>
   <meta name="author" content="Gürdal und Mattis"/>
   <meta name="description" content="Web Anwendungen"/>
+  <script src="javascript/kontakt.js"></script>
   <title>Web Anwendungen Aufgabe-2</title>
 </head>
 <!--   hier startet body -->
@@ -63,12 +64,13 @@
 			  <label for="emailr">Email:</label>
 			  <input type="email" name="email" required="on" id="emailr"> <br/>
 			  <label for="date">Date:</label>
-			  <input type="date" name="geburtsdatum" required="on" id="date"><br/><br/>
+			  <input type="date" name="geburtsdatum" value ="" required="on" id="date"><br/><br/>
 			  <label for="area">Ihre Nachricht:</label></br>
 			  <textarea rows="4" name="area" cols="50" id="area"></textarea><br/>
 			  <input type="reset" name="reset" value="Reset" onclick="alert('Formular ist geleert')">
 			  <input type="submit" name="submit" value="Submit"/>
 			</form>
+			<button id = "reset" onclick="setDefaultValues()">Default</button>
 			<!-- <form action="cgi-bin/script.cgi" method="post" accept-charset="utf-8"></form> -->
 			<br/><br/><br/>
 		  </section>

@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 		<script src="javascript/script.js"></script>
+		<script type="text/Javascript" src="javascript/ajax.js"></script>
 	  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
 	  <meta charset="utf-8"/>
 	  <meta name="author" content="Gürdal und Mattis"/>
@@ -102,7 +103,16 @@
 				  console.log(c);
 
 			 </script>
-
+			
+			<form action=""> 
+				<select name="cities">
+					<option value="">Select city</option>
+					<option value="BER">Berlin</option>
+					<option value="KIE">Kiel</option>
+				</select>
+				<button type=button onclick="getCities(cities.value)">Submit</button>
+			</form>
+			<div id="txtOutput">Das Bundesland von der von Ihnen ausgewählten Stadt ist:</div>
 			<!---------   footer  -------------->
 			<footer>Copyright &copy; 2020 Design by <a href= "">Mattis und Gürdal</a>
 			</footer>

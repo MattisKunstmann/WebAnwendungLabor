@@ -7,10 +7,7 @@ function getBrowserType(){
 	return("Browsertype");
 }
 
-function doSth () {
-	var div1 = document.getElementById("once").innerHTML = "text";
 
-}
 let x= 0;
 	let y= 0;
 	let useless = setInterval(draw, 500);
