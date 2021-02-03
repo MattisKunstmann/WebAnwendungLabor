@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <link href="css/style.css" rel="stylesheet" media="screen"/>
+	  <link href="css/print.css" rel="stylesheet" media="print" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+		<script src="javascript/script.js"></script>
+	  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+	  <meta charset="utf-8"/>
+	  <meta name="author" content="Gürdal und Mattis"/>
+	  <meta name="description" content="Web Anwendungen"/>
+	  <title>Web Anwendungen Aufgabe-3</title>
+	</head>
+	<!--   hier startet body -->
+	<body onload= "onLoad()">
+		<div id="wrapper">
+		  <header>
+			<div class="top_banner">
+			</div>
+			<!---------   header  -------------->
+		  </header>
+		  <!---------   article  -------------->
+		  <article>
+			<!---------   navigation  -------------->
+			<nav>
+			  <ul>
+				<li><a href="https://www.fh-kiel.de/startseite/">FH-KIEL</a></li>
+				<li><a href="https://lms.fh-kiel.de/login/index.php">LMS</a></li>
+				<li><a href="https://qis.fh-kiel.de/qisserver/">QIS</a></li>
+				<li><a href="https://ida.fh-kiel.de/idw/">IDW</a></li>
+				<li><a href="https://fh-kiel-shop.de/">SHOP</a></li>
+				<li><a href="https://www.fh-kiel.de/campus/projekte/campus-tv/">CAMPUS-TV</a></li>
+			  </ul>
+			</nav>
+			<!---------   aside  --------------->
+			<aside>
+			  <h1>Menü</h1>
+			  <div class="col_1">
+				<div class="box">
+				  <ul>
+					<li><a href="index.html">Start</a></li>
+					<li><a href="galeri.html">Galeri</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="javascript.html">Javascript</a></li>
+					  <li><a href="debug.html">Debug</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</aside>
+			<!---------   section  -------------->
+			<section  id="section">
+			  <section class="common_content">
+				<h2>Javascript Magie</h2>
+
+				<hr>
+				<div id="importantdiv"></div>
+				<canvas id="canvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+					</canvas>
+				<br/>
+
+				  <h3><br>Ladebalken animiert</h3>
+				  <main>
+					  <p>Fortschritt:
+						  <output id="ladebalken"> </output>
+					  </p>
+					  <button id="interaktiv">Los!</button>
+				  </main>
+				  <br/><br/>
+				  <h3>FontAwesome Icons mit Spin Effect</h3>
+				  <i class="fab fa-affiliatetheme fa-4x fa-spin"></i>
+				  <i class="fas fa-adjust fa-4x fa-spin"></i>
+				  <br/><br/><br/>
+				  <h3>Bootstrap BG's-</h3>
+				  <div class="p-3 mb-2 bg-primary">bg-primary</div>
+				  <div class="p-3 mb-2 bg-danger">bg-danger</div>
+				  <div class="p-3 mb-2 bg-warning">bg-warning</div>
+				  <div class="p-3 mb-2 bg-info">bg-info</div>
+				  <br/><br/><br/>
+				  <h3>IMG Rounded-Circle Mit Bootstrap</h3>
+				  <img id="streetpic" src = "images/strasse.jpg" class="rounded-circle float-left" alt = "Mit Bootstrap IMG Einstellungen"/>
+				  <br/><br/><br/>
+				  <h3>Alerts mit Bootstrap</h3>
+				  <div class="alert alert-success" role="alert"> <h4 class="allert-heading">Succes Alert</h4></div>
+				  <div class="alert alert-warning" role="alert"> <h4 class="allert-heading">Warning Alert</h4></div>
+				  <br/><br/><br/>
+
+				  <br/>
+				  <p id="result"></p>
+			  </section>
+			</section>
+
+
+			 <script>
+				  a = 5;
+				  b = 6;
+				  c = a + b;
+				  debugger;
+				  console.log(c);
+
+			 </script>
+
+			<!---------   footer  -------------->
+			<footer>Copyright &copy; 2020 Design by <a href= "">Mattis und Gürdal</a>
+			</footer>
+
+		  </article>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+	</body>
+
+	<!--   hier endet body -->
+</html>
